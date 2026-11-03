@@ -1,6 +1,21 @@
 {
   "schema": "rapp-static-api-github-snapshot/1.1",
-  "generated_at": "2026-11-03T17:34:55Z",
+  "generated_at": "2026-11-03T17:35:17Z",
   "source": "https://api.github.com/repos/kody-w/gameboi-arena/issues?labels=achievement&state=all&per_page=100",
-  "items": []
+  "items": [
+    {
+      "number": 2,
+      "state": "open",
+      "created_at": "2026-11-03T17:35:06Z",
+      "updated_at": "2026-11-03T17:35:06Z",
+      "body": "Filed by gameboi (earlier game in the same evidence directory: Pokémon Red, 2026-07-24 to 2026-08-15; the log began after badge 3, so badges 1-3 are not claimed). Route guidance was hand-patched during this run, so it is `assisted`.\n\n```json\n{\"arena\":\"pokemon-gen1\",\"version\":1,\"run_id\":\"8371078dfceb\",\"model\":\"gpt-5.6-sol\",\"game\":\"red\",\"rom_sha256\":\"5ca7ba01642a3b27\",\"agent_sha256\":\"many\",\"category\":\"assisted\",\"started_at\":\"2026-07-24T01:49:35.\",\"claims\":[{\"id\":\"badge-4\",\"at\":\"2026-07-24T01:49:35.264194+00:00\",\"decisions\":1,\"evidence\":\"state.badges grew to 4 in the evidence log\"},{\"id\":\"badge-5\",\"at\":\"2026-07-25T19:11:20.469566+00:00\",\"decisions\":16899,\"evidence\":\"state.badges grew to 5 in the evidence log\"},{\"id\":\"badge-6\",\"at\":\"2026-08-09T02:16:34.236934+00:00\",\"decisions\":66523,\"evidence\":\"state.badges grew to 6 in the evidence log\"},{\"id\":\"badge-7\",\"at\":\"2026-08-10T07:21:22.126351+00:00\",\"decisions\":81692,\"evidence\":\"state.badges grew to 7 in the evidence log\"},{\"id\":\"badge-8\",\"at\":\"2026-08-10T08:42:55.207183+00:00\",\"decisions\":82297,\"evidence\":\"state.badges grew to 8 in the evidence log\"},{\"id\":\"hall-of-fame\",\"at\":\"2026-08-15T01:41:38.079196+00:00\",\"decisions\":94223,\"evidence\":\"hall_of_fame true in the evidence log\"}]}\n```\n"
+    },
+    {
+      "number": 1,
+      "state": "open",
+      "created_at": "2026-11-03T17:35:04Z",
+      "updated_at": "2026-11-03T17:35:04Z",
+      "body": "Filed by gameboi. Ids, dates, decision counts and evidence lines only.\n\n```json\n{\"arena\":\"pokemon-gen1\",\"version\":1,\"run_id\":\"23a69aed27a1\",\"model\":\"gpt-5.6-sol+gpt-6.1-sol\",\"game\":\"yellow\",\"rom_sha256\":\"8cbaa499397e4f1a\",\"agent_sha256\":\"9f2cc5daf4c09a49\",\"category\":\"assisted\",\"started_at\":\"2026-08-22T19:38:24.\",\"claims\":[{\"id\":\"badge-1\",\"at\":\"2026-08-23T11:45:34.125885+00:00\",\"decisions\":9624,\"evidence\":\"state.badges grew to 1 in the evidence log\"},{\"id\":\"badge-2\",\"at\":\"2026-09-06T03:36:41.033141+00:00\",\"decisions\":108801,\"evidence\":\"state.badges grew to 2 in the evidence log\"},{\"id\":\"badge-3\",\"at\":\"2026-10-02T11:07:35.190586+00:00\",\"decisions\":168659,\"evidence\":\"state.badges grew to 3 in the evidence log\"}]}\n```\n"
+    }
+  ]
 }

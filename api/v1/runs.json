@@ -1,5 +1,79 @@
 {
  "schema": "gameboi-arena/1",
- "generated_at": "2026-11-03T17:34:56.080924+00:00",
- "runs": []
+ "generated_at": "2026-11-03T17:35:18.056729+00:00",
+ "runs": [
+  {
+   "run_id": "8371078dfceb",
+   "model": "gpt-5.6-sol",
+   "game": "red",
+   "rom_sha256": "5ca7ba01642a3b27",
+   "agent_sha256": "many",
+   "category": "assisted",
+   "started_at": "2026-07-24T01:49:35.",
+   "claims": {
+    "badge-4": {
+     "at": "2026-07-24T01:49:35.",
+     "decisions": 1,
+     "evidence": "state.badges grew to 4 in the evidence log"
+    },
+    "badge-5": {
+     "at": "2026-07-25T19:11:20.",
+     "decisions": 16899,
+     "evidence": "state.badges grew to 5 in the evidence log"
+    },
+    "badge-6": {
+     "at": "2026-08-09T02:16:34.",
+     "decisions": 66523,
+     "evidence": "state.badges grew to 6 in the evidence log"
+    },
+    "badge-7": {
+     "at": "2026-08-10T07:21:22.",
+     "decisions": 81692,
+     "evidence": "state.badges grew to 7 in the evidence log"
+    },
+    "badge-8": {
+     "at": "2026-08-10T08:42:55.",
+     "decisions": 82297,
+     "evidence": "state.badges grew to 8 in the evidence log"
+    },
+    "hall-of-fame": {
+     "at": "2026-08-15T01:41:38.",
+     "decisions": 94223,
+     "evidence": "hall_of_fame true in the evidence log"
+    }
+   },
+   "issue": 2,
+   "badges": 5,
+   "hall_of_fame": true
+  },
+  {
+   "run_id": "23a69aed27a1",
+   "model": "gpt-5.6-sol+gpt-6.1-sol",
+   "game": "yellow",
+   "rom_sha256": "8cbaa499397e4f1a",
+   "agent_sha256": "9f2cc5daf4c09a49",
+   "category": "assisted",
+   "started_at": "2026-08-22T19:38:24.",
+   "claims": {
+    "badge-1": {
+     "at": "2026-08-23T11:45:34.",
+     "decisions": 9624,
+     "evidence": "state.badges grew to 1 in the evidence log"
+    },
+    "badge-2": {
+     "at": "2026-09-06T03:36:41.",
+     "decisions": 108801,
+     "evidence": "state.badges grew to 2 in the evidence log"
+    },
+    "badge-3": {
+     "at": "2026-10-02T11:07:35.",
+     "decisions": 168659,
+     "evidence": "state.badges grew to 3 in the evidence log"
+    }
+   },
+   "issue": 1,
+   "badges": 3,
+   "hall_of_fame": false
+  }
+ ]
 }
