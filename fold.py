@@ -25,14 +25,14 @@ for it in sorted(issues, key=lambda i: i.get("createdAt") or ""):
         "rom_sha256": str(v.get("rom_sha256", ""))[:16], "agent_sha256": str(v.get("agent_sha256", ""))[:16],
         "category": "autonomous" if v.get("category") == "autonomous" else "assisted",
         "started_at": str(v.get("started_at", ""))[:20], "claims": claims, "issue": it.get("number"),
-        "badges": sum(1 for k in claims if k.startswith("badge-")), "hall_of_fame": "hall-of-fame" in claims}
+        "badges": max([int(k.split("-")[1]) for k in claims if k.startswith("badge-")] or [0]), "hall_of_fame": "hall-of-fame" in claims}
 board = {}
 for r in runs.values():
     key = (r["model"], r["game"], r["category"]); b = board.setdefault(key, {"model": r["model"], "game": r["game"], "category": r["category"], "runs": 0, "best_badges": 0, "best_decisions_per_badge": None, "hall_of_fame": 0})
     b["runs"] += 1; b["best_badges"] = max(b["best_badges"], r["badges"]); b["hall_of_fame"] += int(r["hall_of_fame"])
-    last = max((c for k, c in r["claims"].items() if k.startswith("badge-") and c["decisions"]), key=lambda c: c["decisions"], default=None)
-    if last and r["badges"]:
-        dpb = round(last["decisions"] / r["badges"])
+    counted = [c for k, c in r["claims"].items() if k.startswith("badge-") and c["decisions"]]   # badges the log actually saw
+    if counted:
+        dpb = round(max(c["decisions"] for c in counted) / len(counted))
         if b["best_decisions_per_badge"] is None or dpb < b["best_decisions_per_badge"]: b["best_decisions_per_badge"] = dpb
 rows = sorted(board.values(), key=lambda b: (-b["hall_of_fame"], -b["best_badges"], b["best_decisions_per_badge"] or 1e12))
 now = datetime.datetime.now(datetime.timezone.utc).isoformat()

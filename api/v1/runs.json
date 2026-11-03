@@ -1,6 +1,6 @@
 {
  "schema": "gameboi-arena/1",
- "generated_at": "2026-11-03T17:35:18.056729+00:00",
+ "generated_at": "2026-11-03T17:36:36.839944+00:00",
  "runs": [
   {
    "run_id": "8371078dfceb",
@@ -43,7 +43,7 @@
     }
    },
    "issue": 2,
-   "badges": 5,
+   "badges": 8,
    "hall_of_fame": true
   },
   {

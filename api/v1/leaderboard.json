@@ -1,6 +1,6 @@
 {
  "schema": "gameboi-arena/1",
- "generated_at": "2026-11-03T17:35:18.056729+00:00",
+ "generated_at": "2026-11-03T17:36:36.839944+00:00",
  "submissions": 2,
  "runs": 2,
  "rows": [
@@ -9,7 +9,7 @@
    "game": "red",
    "category": "assisted",
    "runs": 1,
-   "best_badges": 5,
+   "best_badges": 8,
    "best_decisions_per_badge": 16459,
    "hall_of_fame": 1
   },
