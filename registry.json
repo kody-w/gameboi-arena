@@ -1,0 +1,31 @@
+{
+  "schema": "rapp-static-api/1.1",
+  "name": "gameboi-arena",
+  "generated": "2026-11-03T17:32:03Z",
+  "pages_base": "https://kody-w.github.io/gameboi-arena",
+  "raw_base": "https://raw.githubusercontent.com/kody-w/gameboi-arena/main",
+  "summary": {
+    "entries": 1,
+    "drift": 0,
+    "versions": 0
+  },
+  "entries": [
+    {
+      "name": "ACHIEVEMENTS.md",
+      "ext": ".md",
+      "primary_sha8": null,
+      "drift": false,
+      "version_count": 0,
+      "sources": [
+        {
+          "label": "primary",
+          "url": "https://raw.githubusercontent.com/kody-w/gameboi-arena/main/ACHIEVEMENTS.md",
+          "sha8": null,
+          "on_primary": true,
+          "reachable": false
+        }
+      ],
+      "versions": []
+    }
+  ]
+}

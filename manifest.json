@@ -1,0 +1,19 @@
+{
+  "schema": "rapp-static-api/1.1",
+  "name": "gameboi-arena",
+  "pages_base": "https://kody-w.github.io/gameboi-arena",
+  "raw_base": "https://raw.githubusercontent.com/kody-w/gameboi-arena/main",
+  "entries": [
+    { "name": "ACHIEVEMENTS.md", "sources": [ { "label": "primary", "url": "https://raw.githubusercontent.com/kody-w/gameboi-arena/main/ACHIEVEMENTS.md" } ] }
+  ],
+  "github": {
+    "owner": "kody-w",
+    "repo": "gameboi-arena",
+    "out_dir": "api/v1/github",
+    "snapshots": [
+      "repos/{owner}/{repo}",
+      { "path": "repos/{owner}/{repo}/issues?labels=achievement&state=all&per_page=100", "slug": "achievement-issues", "max_pages": 10,
+        "fields": ["number", "created_at", "updated_at", "body", "state"] }
+    ]
+  }
+}
